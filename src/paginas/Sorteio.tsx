@@ -3,6 +3,7 @@ import Card from "../componentes/Card"
 import { useListaDeParticipantes } from "../state/hook/useListaDeParticipantes"
 import { useResultadoSorteio } from "../state/hook/useResultadoSorteio"
 import './Sorteio.css'
+import aviao from '../assets/aviao.png'
 
 const Sorteio = () => {
 
@@ -43,7 +44,7 @@ const Sorteio = () => {
             </form>
             {amigoScreto && <p className="resultado" role="alert">{amigoScreto}</p>}
             <footer className="sorteio">
-                <img src="src/assets/aviao.png" className="aviao" alt="Um desenho de um avião de papel" />
+                <img src={aviao} className="aviao" alt="Um desenho de um avião de papel" />
             </footer>
         </section>
     </Card>)
